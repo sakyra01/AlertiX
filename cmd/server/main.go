@@ -1,4 +1,4 @@
-package app
+package main
 
 import (
     // "encoding/json"
@@ -103,7 +103,7 @@ func (metrics *MemStorage) updateMetricHandler(w http.ResponseWriter, r *http.Re
 }
 
 
-func UpServer() {
+func main() {
 	store := NewMetricStore()
 
     r := chi.NewRouter() // Создаем новый маршрутизатор
